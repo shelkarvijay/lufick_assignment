@@ -165,7 +165,7 @@ class _ListingScreen extends State<ListingScreen> implements ResponseCallBack {
       child: TextFormField(
         controller: _textFieldController,
         autofocus: false,
-        keyboardType: TextInputType.text,
+        keyboardType: TextInputType.number,
         textAlign: TextAlign.start,
         textInputAction: TextInputAction.done,
         decoration: new InputDecoration(
@@ -174,7 +174,7 @@ class _ListingScreen extends State<ListingScreen> implements ResponseCallBack {
           filled: true,
           fillColor: Colors.white,
           counter: Offstage(),
-          hintText: 'AppLocalizations.of(context).translate("Enter_OTP")',
+          hintText: 'Enter value',
           hintStyle: TextStyle(
             fontSize: 12,
           ),
